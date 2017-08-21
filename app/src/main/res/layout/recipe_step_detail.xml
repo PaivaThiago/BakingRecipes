@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="thiagopaiva.bakingrecipes.activities.RecipeStepDetailFragment">
+
+    <ImageView
+        android:id="@+id/step_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/step_video"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:resize_mode="fill"/>
+
+    <TextView
+        android:id="@+id/step_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_margin"
+        android:textAppearance="@style/TextStyle"
+        android:textIsSelectable="true"/>
+
+
+
+</LinearLayout>
+

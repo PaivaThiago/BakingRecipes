@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.RecyclerView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="thiagopaiva.bakingrecipes.MainActivity"/>
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recipe_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/cardMargin"
+        tools:context="thiagopaiva.bakingrecipes.activities.MainActivity"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/recipes_error_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textSize"
+        android:text="@string/error_recipes"
+        android:visibility="invisible" />
+
+</FrameLayout>
+
 

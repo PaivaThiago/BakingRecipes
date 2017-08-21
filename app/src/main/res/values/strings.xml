@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Baking Recipes</string>
+    <string name="sharedPref" translatable="false">thiagopaiva.bakingrecipes.pref</string>
+
+    <string name="error_recipes">No Recipes Available!</string>
+    <string name="first_step">First Step</string>
+    <string name="last_step">Last Step</string>
+    <string name="nextButton">Next Step</string>
+    <string name="previousButton">Previous Step</string>
+
+    <string name="title_step_list">Steps</string>
+    <string name="title_step_detail">Step Detail</string>
+    <string name="title_recipe_step_list">Recipe Steps</string>
+    <string name="title_recipe_step_detail">Recipe Step Detail</string>
+
 </resources>

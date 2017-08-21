@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">22sp</dimen>
+    <dimen name="text_margin">8dp</dimen>
+    <dimen name="button_margin">10dp</dimen>
+
+    <dimen name="cardMargin">8dp</dimen>
+    <dimen name="cardRadius">4dp</dimen>
+    <dimen name="cardSize">180dp</dimen>
+
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+</resources>
