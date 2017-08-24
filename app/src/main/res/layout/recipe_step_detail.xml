@@ -28,7 +28,5 @@
         android:textAppearance="@style/TextStyle"
         android:textIsSelectable="true"/>
 
-
-
 </LinearLayout>
 

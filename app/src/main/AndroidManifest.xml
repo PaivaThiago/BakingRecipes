@@ -5,18 +5,19 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".activities.RecipeStepListActivity"
             android:label="@string/title_recipe_step_list"
@@ -26,6 +27,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="thiagopaiva.bakingrecipes.activities.MainActivity" />
         </activity>
+
         <activity
             android:name=".activities.RecipeStepDetailActivity"
             android:label="@string/title_recipe_step_detail"
@@ -35,6 +37,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="thiagopaiva.bakingrecipes.activities.RecipeStepListActivity" />
         </activity>
+
         <activity
             android:name=".activities.FullscreenPlayerActivity"
             android:label="@string/app_name"
@@ -44,6 +47,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="thiagopaiva.bakingrecipes.activities.RecipeStepDetailActivity" />
         </activity>
-    </application>
 
+        <provider
+            android:name=".data.RecipeContentProvider"
+            android:authorities="thiagopaiva.bakingrecipes"
+            android:exported="false"/>
+    </application>
 </manifest>

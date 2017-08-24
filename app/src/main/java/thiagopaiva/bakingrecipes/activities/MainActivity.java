@@ -9,9 +9,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import thiagopaiva.bakingrecipes.R;
@@ -56,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements RecipesReport.Rec
             mRecipeAdapter.setRecipes(recipes);
         } else {
             showProgressBar();
-            new RecipeTaskUtils(this).execute();
+            new RecipeTaskUtils(this, this).execute();
         }
     }
 
