@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "thiagopaiva.bakingrecipes"
         minSdkVersion 17
@@ -19,9 +19,9 @@ android {
 }
 
 ext {
-    androidToolsVersion = "25.3.1"
+    androidToolsVersion = "25.4.0"
     glideVersion = "3.8.0"
-    butterKnifeVersion = "8.7.0"
+    butterKnifeVersion = "8.8.1"
     exoPlayerVersion = "r2.4.4"
 }
 
